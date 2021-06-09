@@ -1,0 +1,149 @@
+{
+    "obras": [{
+            "id": 1,
+            "nombre": "Tierra de nadie ",
+            "descripcion": "La obra fue seleccionada para integrar la exposición de la 56º edición del Salón Nacional de Artes Visuales en 2014 en Montevideo Uruguay, llamado en esa ocasión \"José Gamarra\". La obra fue galardonada con el Premio Nacional de Pintura y adquirida por dicho Museo, donde actualmente integra su respectivo acervo. ",
+            "anio": "2014",
+            "imagenes": ["build/img/tierraDeNadieBaja1d3.jpg", "build/img/tierraDeNadieBaja2d3.jpg", "build/img/tierraDeNadieBaja3d3.jpg"]
+
+        },
+        {
+            "id": 2,
+            "nombre": "Selenite",
+            "descripcion": "argilla e selenite su carta, 30x30 cm",
+            "anio": "2019",
+            "imagenes": ["build/img/selenite1d1.jpg"]
+
+        },
+        {
+            "id": 3,
+            "nombre": "Costa scura [dittico]",
+            "descripcion": "argilla e carboncino su carta, 140x50 cm",
+            "anio": "2019",
+            "imagenes": ["build/img/costaScura1d2.jpg",
+                "/build/img/costaScura2d2.jpg"
+            ]
+        },
+
+        {
+            "id": 4,
+            "nombre": "Acque correnti [polittico]",
+            "descripcion": "sabbie, carboncino e pigmenti su carta, 176x60 cm",
+            "anio": "2018",
+            "imagenes": ["build/img/acquaCorrenti1d4.jpg",
+                "build/img/acquaCorrenti2d4.jpg", "build/img/acquaCorrenti3d4.jpg", "build/img/acquaCorrenti4d4.jpg"
+            ]
+
+        },
+
+        {
+            "id": 5,
+            "nombre": "Terre chiare [dittico]",
+            "descripcion": "argilla, pietre e pigmenti su carta, 60x41 cm",
+            "anio": "2019",
+            "imagenes": ["build/img/terreChiare1d2.jpg",
+                "build/img/terreChiare2d2.jpg"
+            ]
+
+        },
+
+        {
+            "id": 6,
+            "nombre": "Il segno di Prometeo",
+            "descripcion": "terre, carbone e paraffina su carta, 25x35 cm",
+            "anio": "2019",
+            "imagenes": ["build/img/ilSegnoDiPrometeo1d1.jpg"]
+
+
+        },
+        {
+            "id": 7,
+            "nombre": "Dron, que estas en cielo",
+            "descripcion": "Es un díptico. Cada parte mide 44cm x 60cm. El total de las dos partes es de 88 cm x 60 cm",
+            "anio": "2018",
+            "imagenes": ["build/img/dronQueEstasEnElCielo1d2.jpg", "build/img/dronQueEstasEnElCielo2d2.jpg"]
+
+
+        },
+        {
+            "id": 8,
+            "nombre": "Dentro de los bordes",
+            "descripcion": "Arcilla y carbon sobre papel de alto gramaje, 48cm x 38cm",
+            "anio": "2018",
+            "imagenes": ["build/img/dentroDeLosBordes.jpg"]
+
+
+        },
+        {
+            "id": 9,
+            "nombre": "Arenas y pintura rota",
+            "descripcion": "Arena y pigmentos sobre papel de alto gramaje, 60cm x 44cm",
+            "anio": "2018",
+            "imagenes": ["build/img/arenasYpinturasRota.jpg"]
+
+
+        },
+        {
+            "id": 10,
+            "nombre": "Ká-ñu",
+            "descripcion": "Arcilla y acrílico sobre lienzo, 156cm x 86cm",
+            "anio": "2017",
+            "imagenes": ["build/img/ka-nu.jpg"]
+
+
+        },
+        {
+            "id": 11,
+            "nombre": "Próximo al Leteo",
+            "descripcion": "Tierra de río, arcillas y pigmentos sobre tela. 156cm x 86cm",
+            "anio": "2016 - 2018",
+            "imagenes": ["build/img/proximoAlLeteo.jpg"]
+
+
+        },
+        {
+            "id": 12,
+            "nombre": "Naturaleza muerta",
+            "descripcion": "Arcilla y carbón sobre lienzo. 120cm x 84cm",
+            "anio": "2016",
+            "imagenes": ["build/img/naturalezaMuerta.jpg"]
+
+
+        },
+        {
+            "id": 13,
+            "nombre": "Cielo desde el crater",
+            "descripcion": "Arcillas, tierras y óleo sobre lienzo. 120cm x 84cm",
+            "anio": "2016",
+            "imagenes": ["build/img/cieloDesdeElCrater.jpg"]
+
+
+        }, {
+            "id": 14,
+            "nombre": "Otra vez no es lo mismo",
+            "descripcion": "Arcillas y óleo sobre lienzo. 120cm x 84cm",
+            "anio": "2016",
+            "imagenes": ["build/img/otraVezNoEsLoMismo.jpg"]
+
+
+        },
+        {
+            "id": 15,
+            "nombre": "Lo que sostiene",
+            "descripcion": "Arcilla, tierra y óleo sobre lienzo. 120cm x 84cm",
+            "anio": "2016",
+            "imagenes": ["build/img/loQueSostiene.jpg"]
+
+
+        },
+        {
+            "id": 16,
+            "nombre": "Senderos",
+            "descripcion": "Tierra, arcilla y óleo sobre lienzo. 127cm x 92cm",
+            "anio": "2016",
+            "imagenes": ["build/img/senderos.jpg"]
+
+
+        }
+    ]
+}

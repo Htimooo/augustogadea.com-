@@ -1,0 +1,31 @@
+    body {
+        background-color: $blanco;
+    }
+    
+    .cabecera {
+        @include desktop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            transition: opacity 750ms;
+            z-index: 100;
+            background-color: $blanco;
+        }
+    }
+    
+    .ocultar {
+        display: none;
+    }
+    
+    .mostrar-seccion {
+        display: block !important;
+    }
+    
+    .app {
+        @include desktop {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+    }

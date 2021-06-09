@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Developed by-->
+    <meta name="author" content="Hugo Andrés Timote">
+    <meta name="description" content="Web diseñada para exponer obra del artísta Augusto Gadea ">
+    <!--Titulo-->
+    <title>Augusto Gadea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" type="icon/png" href="build/img/fav-icon.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="app">
+
+        <header id="masthead">
+            <div class="cabecera">
+                <nav>
+                    <div class="nombre">
+                        <a href="#">
+                            <h1>AUGUSTO GADEA</h1>
+                        </a>
+                    </div>
+                    <!--nombre-->
+                    <ul id="link-4" class="enlaces-menu text-center">
+                        <li>
+                            <span data-link="1">Works</span></li>
+                        <li>
+                            <span data-link="2">Biography</span></li>
+                        <li>
+                            <span data-link="3">Contact</span>
+                            <ul class="lista-contacto text-center">
+                                <li><span>mail@augustogadea.com</span></li>
+                                <li><span>+598 99 999 999</span></li>
+                                <li><span>IG | FB</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button data-link="4" class="ham" type="button">
+                    <span class="br-1"></span>
+                    <span class="br-2"></span>
+                    <span class="br-3"></span> 
+                </button>
+
+            </div>
+            <!--cabecera-->
+
+        </header>
+        <!--header-->
+
+        <div id="link-1" class="categoria-contenido ocultar">
+
+
+        </div>
+        <!--categoria-contenido-->
+        <div id="link-2" class="biografia ocultar">
+            <div class="div-img-bio">
+                <img src="./build/img/bio-picture.webp" alt="imagen-biografia">
+
+            </div>
+            <div class="div-p-bio text-center">
+                <p>Augusto Gadea (Montevideo 1989) es un artista visual, pintor uruguayo. Su investigación y proyectos desde hace algunos años se centran en la relación entre la pintura contemporánea, el ser humano y el paisaje. Su obra se desarrolla a través
+                    de la indagación metodológica que se desprende del uso de materiales naturales, principalmente tierras que extrae de diversos territorios y materiales provenientes de la tradición del oficio pictórico.
+                    <p> En el marco de su trabajo ha obtenido premios y distinciones, entre los que destaca a los veinticinco años de edad, el galardón del Premio Nacional de Pintura en el marco de la 56° edición del Salón Nacional de Artes Visuales, “José
+                        Gamarra”, con su obra titulada “Tierra de nadie” (2014), adquirida por el Museo Nacional de Artes Visuales en Montevideo, Uruguay. Ha participado en varias exposiciones colectivas y generado muestras individuales; entre ellas se
+                        menciona su última personal en Uruguay, “En las tierras re-vueltas” en el Museo de Bellas Artes de Montevideo, Juan Manuel Blanes (2018) y “I luoghi della polvere”, con la cura del texto crítico de Raffaele Milani, en la Galleria
+                        Studio Cenacchi, Arte Contemporanea en Bologna, Italia (2019). Su obra forma parte del Museo Nacional de Artes Visuales (MNAV) y de colecciones privadas en varios países.</p>
+                    <p> Gadea es también director artístico de la residencia arística “AIR Madreselva” ubicada en Montevideo e integra el colectivo artístico TDUEPURC (transpuesto de un estudio para un retrato común).</p>
+                </p>
+            </div>
+
+        </div>
+        <!--biografia-->
+        <div id="link-3" class="contacto ocultar">
+            <div class="contenedor-contact">
+
+                <div class="contenedor-contact">
+                    <h3>CONTACTO</h3>
+                    <form class="formulario" action="">
+
+                        <input class="campos" type="text" id="fname" name="fname" placeholder="Nombre">
+
+
+                        <input class="campos" type="text" id="email" name="email" placeholder="E-mail">
+
+
+                        <input type="textArea" class="t-area campos" id="message" name="message" rows="10" cols="30" placeholder="Escribe tu mensaje...">
+
+                        <input type="submit" class="btn-form" value="Enviar">
+                    </form>
+                </div>
+
+            </div>
+            <div class="rr-ss">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fas fa-phone"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+        <!--contacto-->
+    </div>
+    <!--app-->
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>

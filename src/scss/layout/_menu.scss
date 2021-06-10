@@ -1,23 +1,27 @@
 nav {
+    position: fixed;
     height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: space-around;
     background-color: $blanco;
-    overflow: hidden;
     padding: 0;
+    border-bottom: solid 1px $gris;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    @include desktop {
+        border: none;
+        box-shadow: none;
+        position: relative;
+    }
 }
 
 .nombre {
     align-content: start;
     width: 100%;
     padding-bottom: $separacion/2;
-    border-bottom: solid 1px $gris;
-    @include desktop {
-        border: none;
-    }
     h1 {
         text-align: start;
         font-size: 2.5rem;
@@ -31,7 +35,7 @@ nav {
 
 .ham {
     display: block;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     border: none;
     margin: 0;

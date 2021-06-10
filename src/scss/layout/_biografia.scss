@@ -31,12 +31,13 @@
     }
     
     .div-p-bio {
-        padding: $separacion/4;
+        padding: $separacion/3;
         @include desktop {
             max-width: 85%;
         }
         p {
             color: $negro;
-            text-align: start;
+            text-align: center;
+            font-size: 1rem;
         }
     }

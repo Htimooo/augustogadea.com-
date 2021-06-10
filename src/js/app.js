@@ -57,7 +57,7 @@ async function mostrarObra() {
         const db = await resultado.json();
 
         const { obras } = db;
-
+        //
         //Generar HTML
         obras.forEach(obra => {
             const { id, nombre, descripcion, anio, imagenes } = obra;
@@ -87,7 +87,7 @@ async function mostrarObra() {
             // Se crea parrafo con nombre
             const nombreObra = document.createElement('P');
             nombreObra.textContent = nombre;
-            nombre.dataset.nombreId = nomb;
+
             //se le agrega la clase para poder darle estilso css
             nombreObra.classList.add('nombre-obra');
 
@@ -95,6 +95,7 @@ async function mostrarObra() {
             // Se crea parrafo con descripcion
             const descripcionObra = document.createElement('P');
             descripcionObra.textContent = descripcion;
+
 
             //se le agrega la clase para poder darle estilso css
             descripcionObra.classList.add('descripcion-obra');

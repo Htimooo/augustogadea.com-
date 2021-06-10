@@ -1,7 +1,7 @@
     .categoria-contenido {
         color: $negro;
         background-color: $blanco;
-        padding-top: $separacion;
+        padding-top: $separacion *1.5;
     }
     
     .obra-contenedor {
@@ -61,7 +61,7 @@
                 width: auto;
             }
             @include desktop {
-                height: 50rem;
+                max-height: 40rem;
                 width: auto;
             }
         }

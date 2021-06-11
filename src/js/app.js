@@ -5,6 +5,7 @@ const ham = document.querySelector('.ham');
 const barras = document.querySelectorAll('.ham span');
 const body = document.querySelector('body');
 
+
 document.addEventListener('DOMContentLoaded', function() {
     iniciarApp();
 });
@@ -62,10 +63,6 @@ async function mostrarObra() {
         obras.forEach(obra => {
             const { id, nombre, descripcion, anio, imagenes } = obra;
 
-
-            //DOM scripting 
-
-
             //agregar imagenes 
             const imagenesObra = document.createElement('ul');
             imagenes.forEach(img => {
@@ -73,7 +70,6 @@ async function mostrarObra() {
                 imagen.src = img;
                 const lista = document.createElement('LI');
 
-                imagen.dataset.imagenId = img;
 
 
                 //agrego imagenen a html
@@ -81,41 +77,33 @@ async function mostrarObra() {
                 imagenesObra.appendChild(lista);
 
                 //agrego evento a imagenes
-                imagen.onclick = agrandarImagen;
+                //imagen.onclick = agrandarImagen;
             })
+
+            imagenesObra.classList.add('imagenes-obra');
 
             // Se crea parrafo con nombre
             const nombreObra = document.createElement('P');
             nombreObra.textContent = nombre;
-
-            //se le agrega la clase para poder darle estilso css
             nombreObra.classList.add('nombre-obra');
 
 
             // Se crea parrafo con descripcion
             const descripcionObra = document.createElement('P');
             descripcionObra.textContent = descripcion;
-
-
-            //se le agrega la clase para poder darle estilso css
             descripcionObra.classList.add('descripcion-obra');
-
 
             // Se crea parrafo con fecha
             const anioObra = document.createElement('P');
             anioObra.textContent = anio;
-
-            //se le agrega la clase para poder darle estilso css
             anioObra.classList.add('anio-obra');
 
 
-            //se le agrega la clase para poder darle estilso css
-            imagenesObra.classList.add('imagenes-obra');
 
-            //Inyectar array imagenes en imagenes-obra
-            //se crea div contenedor de obra
             const obraContenedor = document.createElement('DIV');
             obraContenedor.classList.add('obra-contenedor');
+            obraContenedor.dataset.divObraId = id;
+
 
             //Inyectar nombre y fecha en obra-contenedor en HTML
             obraContenedor.appendChild(imagenesObra);
@@ -124,6 +112,40 @@ async function mostrarObra() {
 
             //Inyectar en el HTML
             document.querySelector('#link-1').appendChild(obraContenedor);
+
+            obraContenedor.addEventListener('click', e => {
+                e.preventDefault();
+                const overlay = document.createElement('DIV');
+                overlay.appendChild(imagenesObra);
+                overlay.appendChild(nombreObra);
+                overlay.appendChild(anioObra);
+                overlay.appendChild(descripcionObra);
+
+                overlay.classList.add('overlay');
+
+                body.appendChild(overlay);
+                body.classList.add('fijar-body')
+
+
+                //boton para cerrar imagen
+                const cerrarImagen = document.createElement('P');
+                cerrarImagen.textContent = 'X';
+                cerrarImagen.classList.add('btn-cerrar');
+                overlay.appendChild(cerrarImagen);
+
+
+                //agregar evento para que funcione el boton de cerrar
+                cerrarImagen.onclick = function() {
+                        overlay.remove();
+                        body.classList.remove('fijar-body');
+                    }
+                    //quitar overlay y fijar-body cuando se hace click en cualquier parte del contenedor
+                overlay.onclick = function() {
+                    overlay.remove();
+                    body.classList.remove('fijar-body');
+                }
+
+            })
 
 
         })
@@ -139,42 +161,3 @@ ham.addEventListener('click', () => {
 
 
 })
-
-function agrandarImagen(e) {
-
-    const imagen = document.createElement('IMG');
-    imagen.src = e.target.dataset.imagenId;
-
-    const overlay = document.createElement('DIV');
-    overlay.appendChild(imagen);
-
-    overlay.classList.add('overlay');
-
-    //cerrar cuando se hace click en cualquier parte de la pantalla 
-    overlay.onclick = function() {
-        overlay.remove();
-        body.classList.remove('fijar-body');
-    }
-
-    //mostrar en el HTML
-
-    body.appendChild(overlay);
-    body.classList.add('fijar-body');
-
-    //boton para cerrar imagen
-    const cerrarImagen = document.createElement('P');
-    cerrarImagen.textContent = 'X';
-    cerrarImagen.classList.add('btn-cerrar');
-
-    //agregar evento para que funcione el boton de cerrar
-    cerrarImagen.onclick = function() {
-        overlay.remove();
-        body.classList.remove('fijar-body');
-    }
-
-    overlay.appendChild(cerrarImagen);
-
-    //quitar clase que fija el body cuando 
-
-
-}

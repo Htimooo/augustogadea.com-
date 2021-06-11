@@ -12,18 +12,8 @@
         margin-right: auto;
         text-align: center;
         background-color: $blanco;
-        @include tablet {
-            p {
-                max-width: 50%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            @include desktop {
-                padding: $separacion *1.5 0;
-            }
-        }
         p {
-            color: $negro;
+            display: none;
         }
     }
     
